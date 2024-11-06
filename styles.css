@@ -1,0 +1,59 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #4A235A;
+}
+
+.brand-title {
+    font-family: 'Poppins', sans-serif;
+    color: #4A235A;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #4A235A !important;
+}
+
+.navbar-divider {
+    border-top: 1px solid #4A235A;
+    margin-top: -1px;
+}
+
+.container h1, .container h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #4A235A;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
+.flag-icon {
+    width: 100px;
+    height: auto;
+}
+
+.language-selector select {
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.about-text {
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #4A235A;
+    border: none;
+}
+
+footer {
+    font-size: 0.9em;
+}
