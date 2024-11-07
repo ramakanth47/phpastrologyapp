@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Added FontAwesome link -->
     <style>
-        /* Language Selector Styling */
+        
         .language-selector {
             display: flex;
             flex-direction: column;
@@ -25,7 +26,7 @@
 
         /* About Us Section Styling */
         .about-section {
-            display: none; /* Hide initially */
+            display: block; 
             margin: 50px auto;
             max-width: 800px;
             color: #4a148c;
@@ -48,17 +49,78 @@
 
         /* Reviews Section Styling */
         .reviews-section {
-            display: none; 
+            display: block; 
             margin: 50px auto;
             max-width: 800px;
             color: #4a148c;
             text-align: center;
             font-family: 'Poppins', sans-serif;
         }
-
-      
+        
         .normal-ui {
             display: block;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #4B0082; 
+            color: #fff;
+            padding: 40px 0 20px;
+        }
+        .footer h5 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .form-control {
+            background-color: #4B0082;
+            border: 1px solid #ddd;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .footer .form-control::placeholder {
+            color: #ddd;
+        }
+        .footer .btn {
+            background-color: #fff;
+            color: #4B0082;
+            font-weight: bold;
+            border: none;
+            padding: 8px 15px;
+            width: 100%;
+        }
+        .social-icons {
+            text-align: right;
+        }
+        .social-icons a {
+            color: #fff;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            color: #ddd;
+            margin-top: 20px;
+        }
+        .footer .contact-info p, .footer .quick-links ul {
+            line-height: 1.8;
+            font-size: 14px;
+        }
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .quick-links ul li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -158,57 +220,93 @@
 
 <!-- Reviews Section -->
 <div class="container reviews-section" id="reviews-section">
-    <h2>Client Reviews</h2>
-    <p>Here are some of the positive feedbacks we’ve received from our valued clients.</p>
-    <ul>
-        <li>"Divine Guide transformed my life with their insights. Highly recommend!"</li>
-        <li>"The numerology consultation was spot on. Thank you for the guidance."</li>
-        <li>"Vastu consultation helped me improve the energy in my home. Truly amazing!"</li>
-         <li>"The astrology reading was incredibly accurate. I now feel more aligned with my destiny."</li>
-        <li>"I saw improvements in my business after applying the lucky business name recommendation. Very grateful!"</li>
-        <li>"Kundali compatibility analysis gave me clarity about my relationship. Thank you, Divine Guide!"</li>
-        <li>"Their advice on my lucky mobile number changed my luck! Highly recommend their services."</li>
-        <li>"I was skeptical at first, but the services have truly worked wonders in my life. 
-            Thanks to Divine Guide, my professional life has taken a positive turn!"</li>
-        <li>"The Vastu consultation was very insightful and practical. 
-            I noticed a difference in the flow of energy in my house after the recommendations." </li>
-        <li>"I’ve been using the services for years and each time they’ve provided great insights.
-             into my life and business. Truly thankful to Divine Guide for the constant support!"</li>
-    </ul>
+    <h2>Reviews</h2>
+
+    
+    <div class="review">
+        <h4>Enlightening and Uplifting! 🌟</h4>
+        <p>"I had the privilege of working with this divine guide, and it was truly an enlightening experience! From the moment we began our session, I felt an overwhelming sense of peace and clarity. Their ability to tune into my energy was remarkable, and the insights I received have helped me navigate some major life decisions with confidence. I highly recommend this service to anyone seeking guidance and support on their spiritual journey."</p>
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+        <p><strong>Name:</strong> Jessica L.</p>
+    </div>
+
+    <div class="review">
+        <h4>A True Source of Wisdom 🙏</h4>
+        <p>"What an incredible experience! The divine guide I worked with helped me understand my purpose and brought me comfort during a challenging time. Their wisdom and compassion are unmatched, and I left every session feeling more at ease and connected to my higher self. If you're looking for genuine spiritual guidance, this is the place to go."</p>
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+        <p><strong>Name:</strong> Michael B.</p>
+    </div>
+
+    
+    <div class="review">
+        <h4>Eye-Opening Experience</h4>
+        <p>"I was skeptical at first, but this divine guide’s accuracy and depth were truly eye-opening. They were able to tap into things about my life that no one could have known. The guidance I received was both practical and spiritual, and I felt so much lighter after the session. I’m excited to return for more sessions!"</p>
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+        <p><strong>Name:</strong> Liam T.</p>
+    </div>
 </div>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Divine Guide. All rights reserved.</p>
-</footer>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h5>Contact</h5>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Sion churubatti Road, Sion-Mumbai 400022</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Shyamlal Compound, Begampet Hyderabad 500016</p>
+                    <p><i class="fas fa-phone"></i> 9071013371</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:divineguide@gmail.com">divineguide@gmail.com</a></p>
+                </div>
+            </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+            
+            <div class="col-md-4 quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="terms.html" target="_blank">Terms & Conditions</a></li>
+                    <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="refund.html" target="_blank">Refund and Cancellation Policy</a></li>
+                </ul>
+            </div>
 
-<script>
-    $(document).ready(function(){
-       
-        $('#main-content').show();
-        $('#aboutus-section').hide();
-        $('#reviews-section').hide();
+           
+            <div class="col-md-4">
+                <h5>Quick Enquiry</h5>
+                <form>
+                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Phone Number">
+                    <textarea class="form-control" rows="3" placeholder="Write Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
 
      
-        $('#aboutus-link').click(function(e){
-            e.preventDefault(); 
-            $('#main-content').hide();  
-            $('#aboutus-section').show(); 
-            $('#reviews-section').hide(); 
-        });
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p class="footer-bottom">&copy; 2024-2025 All Rights Reserved by divineguide.co</p>
+            </div>
+            <div class="col-md-6 social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 
-       
-        $('#reviews-link').click(function(e){
-            e.preventDefault(); 
-            $('#main-content').hide();  
-            $('#reviews-section').show(); 
-            $('#aboutus-section').hide(); 
-        });
-    });
-</script>
+<!-- Bootstrap and jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
